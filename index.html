@@ -9,6 +9,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap" rel="stylesheet">
 
+    <script src="https://unpkg.com/lucide@latest" defer></script>
+
   <link rel="stylesheet" href="css/style.css">
 
 
@@ -44,11 +46,71 @@
 
       <button id="menu-toggle" class="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="mobile-menu">☰</button>
     </div>
-
     </header>
 
-<h1>This is a Heading</h1>
-<p>This is a paragraph.</p>
+    <!--INICIO DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
+
+    <main>
+       <section id="inicio" class="container hero-section">
+      <div class="hero-content fade-in-up">
+        <p class="eyebrow">Skincare · Productos para la piel</p>
+        <h1 class="hero-title">Glow Lab</h1>
+        <p class="hero-subtitle">
+          Descubre el cuidado que tu piel merece. Encuentra tus productos favoritos y haz que cada día sea una oportunidad para consentirte y brillar.
+        </p>
+        <a href="#menu" class="btn btn-coffee hero-cta">
+          Descubre nuestros productos <i data-lucide="arrow-right" class="icon-sm"></i>
+        </a>
+      </div>
+
+
+      <div class="hero-media">
+        <div class="hero-backdrop" aria-hidden="true"></div>
+        <img
+          src="img/hero.jpg"
+          alt="Imágen de fondo para la sección del hero de Glow Lab"
+          width="1600"
+          height="1104"
+          class="hero-image"
+        />
+      </div>
+    </section>
+
+
+    </main>
+
+
+    <!--Footer-->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#inicio" class="logo logo-light" aria-label="Glow Lab, inicio">
+       
+
+        <span class="logo-text">Glow Lab </span>
+      </a>
+
+
+      <nav class="footer-nav" aria-label="Navegación pie de página">
+        <a href="#inicio">Inicio</a>
+        <a href="#productos">Productos</a>
+        <a href="#about">About</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+
+
+      <div class="social-links">
+        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+      </div>
+    </div>
+
+
+    <p class="copyright">
+      © <span id="current-year"></span> Glow Lab. Todos los derechos reservados.
+    </p>
+  </footer>
+
+
 
 </body>
 </html>

@@ -8,6 +8,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sofia&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+
 
     <script src="https://unpkg.com/lucide@latest" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/lucide@0.577.0/dist/umd/lucide.min.js"></script>
@@ -36,7 +38,7 @@
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#productos">Productos</a></li>
           <li><a href="#about">About</a></li>
-          <li><a href="#oferta">Oferta</a></li>
+          <li><a href="#beneficios">Beneficios</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
         <button type="button" class="btn primary" onclick="openWhatsApp('Hola, quiero hacer un pedido en Glow Lab.')">
@@ -80,7 +82,7 @@
 
     <!--AQUÍ VAMOS A AGREGAR ALGO SOBRE NOSOTROS, MISIÓN, VISIÓN-->
 
-     <section id="nosotros" class="about-section">
+     <section id="about" class="about-section">
       <div class="container about-grid">
         <img
           src="img/astik.jpg"
@@ -108,7 +110,7 @@
 
     <!--AQUÍ VAN NUESTROS PRODUCTOS-->
 
-     <section id="menu" class="container menu-section">
+     <section id="productos" class="container menu-section">
       <div class="section-header-center">
         <p class="eyebrow">Nuestros Productos</p>
         <h2 class="section-title">Skincare</h2>
@@ -216,7 +218,7 @@
       </section>
 
     <!-- Diferenciadores 1-->
-    <section class="perks-section">
+    <section class="perks-section" id="beneficios">
       <div class="container perks-grid">
 
         <div class="perk-item">
@@ -247,11 +249,68 @@
         </div>
 
 
-
       </div>
     </section>
 
+    <!--Dirección y Contacto-->
 
+    <section id="contacto" class="container contact-section">
+      <div>
+        <p class="eyebrow">Contacto</p>
+        <h2 class="section-title">Ubicación </h2>
+        <p class="muted-note">Av. Montevideo 363, Plaza Lindavista, Local 24, Col. Lindavista Sur, Gustavo A. Madero, CDMX, C.P. 07300.</p>
+
+
+        <ul class="contact-list">
+          <li> <a href="https://maps.app.goo.gl/EW57Wdg5Cnn6q7v9A">
+            <i data-lucide="map-pin" class="contact-icon">
+            
+          </i> Lindavista</li></a>
+          <li><i data-lucide="phone" class="contact-icon"></i> (52) 5533765094 </li>
+          <li><i data-lucide="mail" class="contact-icon"></i> ng.jimenez@ebc.edu.mx</li>
+          <li><i data-lucide="clock" class="contact-icon"></i> Lun a Vie 9:00 - 22:00</li>
+        </ul>
+
+
+        <a
+          href="https://wa.me/525533765094"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="btn btn-primary whatsapp-btn"
+        >
+          <i data-lucide="message-circle" class="icon-sm"></i> WhatsApp (5533765094)
+        </a>
+        <p class="footnote">+52 5533765094 </p>
+      </div>
+
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nombre</label>
+          <input id="name" name="name" type="text" maxlength="100" />
+          <p id="error-name" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="email">Correo electrónico</label>
+          <input id="email" name="email" type="email" maxlength="255" />
+          <p id="error-email" class="error-text" aria-live="polite"></p>
+        </div>
+
+
+        <div class="form-group">
+          <label for="message">Mensaje</label>
+          <textarea id="message" name="message" rows="5" maxlength="1000"></textarea>
+          <p id="error-message" class="error-text" aria-live="polite"></p>
+        </div>
+
+        <button type="submit" class="btn-formulario">Enviar mensaje</button>
+
+        <p id="form-status" class="form-status" role="status" hidden>
+          ¡Registro exitoso! 
+        </p>
+      </form>
+    </section>
 
     </main><!--FIN DEL CONTENIDO PRINCIPAL DE LA PÁGINA-->
 
@@ -275,8 +334,9 @@
 
 
       <div class="social-links">
-        <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
-        <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+        <a href="https://www.instagram.com/whoisnadia.13?hvrq=MWZ5Mmw2a25kb2VoYQ%3D%3D&utm_source=qr" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.facebook.com/share/1C1hraF169/?mibextid=wwXIfr" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+        <a href="https://www.tiktok.com/@itsss.geraaal?_r=1&_t=ZS-9BjF1lD6zVS" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
       </div>
     </div>
 
@@ -286,7 +346,7 @@
     </p>
   </footer>
 
-<script src="js/script.js">></script>
+<script src="js/script.js"></script>
 
 </body>
 </html>
